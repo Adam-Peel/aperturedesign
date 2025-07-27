@@ -59,7 +59,11 @@ export default function ContactForm() {
       .then(
         (response) => {
           setStatus("Message sent successfully!");
-          console.log("SUCCESS!", response.status, response.text);
+          if (emailRef.current && messageRef.current && nameRef.current) {
+            emailRef.current.value = "";
+            messageRef.current.value = "";
+            nameRef.current.value = "";
+          }
         },
         (error) => {
           setStatus("Sorry, message did not send. Please email!");
