@@ -86,7 +86,7 @@ export default function ContactForm() {
 
   return (
     <div className={classes.wrapper} id="contact">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-20 mb-20 pt-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 mt-20 mb-20 pb-10 pt-20">
         <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
           <div>
             <Title className={classes.title}>Contact us</Title>
