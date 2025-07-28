@@ -5,11 +5,10 @@
     rgb(17 24 39) 0%,
     rgb(31 41 55) 100%
   );
+  padding: 5;
   border-radius: var(--mantine-radius-md);
-  padding: calc(var(--mantine-spacing-xl) * 2.5);
 
   @media (max-width: (--mantine-breakpoint-sm)) {
-    padding: calc(var(--mantine-spacing-xl) * 1.5);
   }
 }
 

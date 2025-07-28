@@ -6,7 +6,7 @@ export default function HeroHome() {
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero content */}
-        <div className="pb-12 pt-12 md:pb-20 md:pt-40">
+        <div className="pb-12 pt-20 md:pb-20 md:pt-20">
           {/* Section header */}
           <div className=" text-center">
             <h1
