@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Aperture Design - Services",
   description:
-    "Home page for Aperture Design, showcasing our services and values as provider of sustainable, clean, and efficient digital products. Services include web design, application design, development, and deployment.",
+    "Home page for Aperture Design, provider of sustainable, clean, and efficient web design and application design. | Based in Nottingham.",
 };
 
 import { AboutGrid } from "@/components/about";

@@ -1,12 +1,7 @@
 import "./css/style.css";
 import "@mantine/core/styles.css";
-import { Html, Head, Main, NextScript } from "next/document";
 
-import {
-  ColorSchemeScript,
-  MantineProvider,
-  mantineHtmlProps,
-} from "@mantine/core";
+import { MantineProvider, mantineHtmlProps } from "@mantine/core";
 
 import { Inter } from "next/font/google";
 import { EmailJSInit } from "@/components/noui/EmailJSInit";
@@ -45,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth" {...mantineHtmlProps}>
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${inter.variable} bg-gray-50 font-inter tracking-tight text-gray-900 antialiased`}
       >
