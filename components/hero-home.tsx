@@ -8,29 +8,34 @@ export default function HeroHome() {
         {/* Hero content */}
         <div className="pb-12 pt-12 md:pb-20 md:pt-40">
           {/* Section header */}
-          <div className="pb-12 text-center md:pb-16">
+          <div className=" text-center">
             <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
+              className="border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
               Aperture Design
             </h1>
+            <h1
+              className="border-y text-2xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-3xl"
+              data-aos="zoom-y-out"
+              data-aos-delay={300}
+            >
+              Digital design, done well.
+            </h1>
+            <br />
             <div className="mx-auto max-w-3xl">
               <p
                 className="mb-8 text-lg text-gray-700"
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Digital products, experiences, and platforms that are designed
-                well. Our focus is to make sure that any information is clear,
-                concise, and compelling, by highlighting your messages and
-                products. Underlying this is a commitment to consistently high
-                quality of service and standards, using the best technology
-                providers. We use green-energy platforms, and practice
-                scalability in our development, ensuring that our services are
-                not only clean and effective today but also future-proofed for
-                tomorrow.
+                Our focus is making sure your message is clear, concise, and
+                compelling. Underlying this is a commitment to consistently high
+                service and standards, using the best technology providers. We
+                use green-energy platforms, and practice scalability in our
+                development, ensuring that our services are not only clean and
+                effective today but also future-proofed for tomorrow.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div

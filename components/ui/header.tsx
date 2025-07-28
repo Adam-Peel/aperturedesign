@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Logo from "./logo";
 import Image from "next/image";
-import Logo01 from "@/public/images/aperture.png";
+import Logo01 from "@/public/images/logo-01.svg";
 
 export default function Header() {
   return (
@@ -20,7 +19,7 @@ export default function Header() {
           </div>
 
           {/* Desktop sign in links */}
-          <ul className="flex flex-1 items-center justify-end gap-3">
+          {/* <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
                 href="/signin"
@@ -34,10 +33,10 @@ export default function Header() {
                 href="/signup"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Register
+                Login
               </Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </header>

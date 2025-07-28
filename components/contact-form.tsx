@@ -1,10 +1,6 @@
 "use client";
 
-import {
-  IconBrandInstagram,
-  IconBrandTwitter,
-  IconBrandYoutube,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import {
   ActionIcon,
   Button,
@@ -19,8 +15,7 @@ import { ContactIconsList } from "./contact-icons";
 import classes from "../app/css/additional-styles/ContactUs.module.css";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
-const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
+import Link from "next/link";
 
 export default function ContactForm() {
   const emailRef = useRef<HTMLInputElement>(null);
@@ -72,16 +67,22 @@ export default function ContactForm() {
       );
   };
 
-  const icons = social.map((Icon, index) => (
+  const icons = [
     <ActionIcon
-      key={index}
+      key={"linkedin"}
       size={28}
       className={classes.social}
       variant="transparent"
     >
-      <Icon size={22} stroke={1.5} />
-    </ActionIcon>
-  ));
+      <Link
+        href="https://www.linkedin.com/in/adam-peel"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <IconBrandLinkedin size={22} stroke={1.5} />
+      </Link>
+    </ActionIcon>,
+  ];
 
   return (
     <div className={classes.wrapper} id="contact">
@@ -97,7 +98,7 @@ export default function ContactForm() {
 
             <ContactIconsList />
 
-            {/* <Group mt="xl">{icons}</Group>  */}
+            <Group mt="xl">{icons}</Group>
           </div>
 
           <div className={classes.form}>
@@ -125,7 +126,10 @@ export default function ContactForm() {
               mt="md"
               radius="md"
               ref={messageRef}
-              classNames={{ input: classes.input, label: classes.inputLabel }}
+              classNames={{
+                input: classes.textarea,
+                label: classes.inputLabel,
+              }}
             />
 
             <Group justify="space-between" mt="md">

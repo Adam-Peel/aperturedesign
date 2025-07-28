@@ -61,3 +61,14 @@
 .control {
   background-color: var(--color-blue-600);
 }
+
+.textarea {
+  height: 150px;
+  background-color: var(--mantine-color-white);
+  border-color: var(--mantine-color-gray-4);
+  color: var(--mantine-color-black);
+
+  &::placeholder {
+    color: var(--mantine-color-gray-5);
+  }
+}
